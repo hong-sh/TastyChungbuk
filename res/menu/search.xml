@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.chungbuk.tasty.MainActivity" >
+
+    <item
+        android:id="@+id/action_map"
+        android:icon="@drawable/ic_map"
+        android:orderInCategory="100"
+        android:title="@string/action_list"
+        app:showAsAction="ifRoom"/>
+
+    <!--
+           <item
+        android:id="@+id/action_overflow"
+        android:orderInCategory="100"
+        android:title="test"
+    	android:showAsAction="ifRoom"/>
+    -->
+
+</menu>

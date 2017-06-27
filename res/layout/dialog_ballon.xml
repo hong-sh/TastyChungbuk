@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/layout_ballon"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/bullon_background"
+        android:clickable = "true" >
+
+        <ImageView
+            android:id="@+id/imageView_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/ballon_eng" />
+
+        <TextView
+            android:id="@+id/textView_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imageView_icon"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="10dp"
+            android:text="TextView" />
+
+        <RatingBar
+            android:id="@+id/star_ratingbar"
+            style="@style/starRatingBar_small"
+            android:layout_width="110dp"
+            android:layout_height="20dp"
+            android:layout_toRightOf="@+id/imageView_icon"
+            android:layout_below="@+id/textView_name"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:numStars="5"
+            android:stepSize="0.5" />
+
+        <TextView
+            android:id="@+id/imageView1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@+id/imageView_icon"
+            android:layout_alignRight="@+id/imageView_icon"
+            android:background="@drawable/listview_review"
+            android:text="123"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:textSize="8dp"
+           />
+
+    </RelativeLayout>
+
+</RelativeLayout>
